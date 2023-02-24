@@ -4,29 +4,30 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "73f5c14b32b24d632d57cbb307a2a6fe",
+    "content-hash": "a808d81b0916a7d1625851454587e324",
     "packages": [
         {
             "name": "bigcommerce/injector",
-            "version": "v2.1.0",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/bigcommerce-labs/injector.git",
-                "reference": "daba61aed3723481693bdecf0f7912024938958d"
+                "url": "https://github.com/bc-anton-k/injector.git",
+                "reference": "e6f2da73cb3647424da1c72346e2c9a1a9ab97b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bigcommerce-labs/injector/zipball/daba61aed3723481693bdecf0f7912024938958d",
-                "reference": "daba61aed3723481693bdecf0f7912024938958d",
+                "url": "https://api.github.com/repos/bc-anton-k/injector/zipball/e6f2da73cb3647424da1c72346e2c9a1a9ab97b2",
+                "reference": "e6f2da73cb3647424da1c72346e2c9a1a9ab97b2",
                 "shasum": ""
             },
             "require": {
-                "ocramius/proxy-manager": "^1.0 || ^2.0",
-                "php": "^7.3 || ^8.0",
+                "ocramius/proxy-manager": "^1.0 || ^2.14",
+                "php": "^7.3 || ^8.2",
                 "pimple/pimple": "*",
                 "psr/container": "^1.0"
             },
             "require-dev": {
+                "phpspec/prophecy-phpunit": "^2.0",
                 "phpunit/phpunit": "^5.6 || ^6.0 || ^7.0 || ^8.0 || ^9.0"
             },
             "type": "library",
@@ -35,14 +36,22 @@
                     "Bigcommerce\\Injector\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\": "tests/"
+                }
+            },
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "Adam Benson",
-                    "email": "adam.benson@bigcommerce.com"
+                    "name": "Garry Filakhtov",
+                    "email": "garry.filakhtov@bigcommerce.com"
+                },
+                {
+                    "name": "Dmytro Kuzmenko",
+                    "email": "dmytro.kuzmenko@bigcommerce.com"
                 }
             ],
             "description": "Container interop Dependency Injector.",
@@ -51,7 +60,10 @@
                 "injector",
                 "pimple"
             ],
-            "time": "2020-12-14T14:16:15+00:00"
+            "support": {
+                "source": "https://github.com/bc-anton-k/injector/tree/v3.0.0"
+            },
+            "time": "2023-02-24T16:52:31+00:00"
         },
         {
             "name": "doctrine/instantiator",
